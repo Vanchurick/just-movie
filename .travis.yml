@@ -1,0 +1,14 @@
+language: node_js
+node_js:
+- '10'
+before_install:
+- npm install -g @angular/cli
+install: npm install
+branches:
+  only:
+  - master
+deploy:
+  provider: heroku
+  app: just-movie
+  api_key:
+    secure: fhq5ggb1NrEj951uoocXx0fLhrWpgiTWm0idrVmImt9Zl24rpdehSlzQefrpgtg+e/A730gQiLEOOo2t3noJzqZjU8/Jr96Ra/DP3dRqeXO+I0kTUv0dhDHSdVJDL2ufY/TGqAqsMGJg8eVVebEiL6Xduwxzn2VY8Ey4QbB423NOU4hVGItD8kWgGbH1WeUr7JxGt3uuicgTtHhNyzZqJc72reNDrwU0DbXZLLTyVHnj0K9aI2+JyVLp0v6zbmAwxmsbzy8uDjwu9jNeBXDIb34z2Jv+ObuOJg/HqSRwoSujuzUBZ6r7PMq+rsiMRNTOnbWkhb0XaTXW0zmaM+SYHpoxuLs9AnwLnVJU8kRLTN4aYHj7cdks9uNHvnmxOGnk9J0IlS+SGeze7yJCRoporC8T8MvIkWH1GTribiEQP8RbiuHoB/jNJbbSdzGnsU0dWYEdlRZyBOrJksw7idxgXc/3tweyPN+5zgrKI7Phz9Wj/Wi45T+MDYg/gFzAFpGh6GBCFOCBsJJz/diRcQveDe/IOBzbnPqXzopRQLqkEgs22+uHhDyj5lKvi5K111MoR58+Qg6shd9nBq30I0kpVurXWxlpfFL5i48RsWDxqSR64YRJmpqQbAnwx5xa5Y5QWbcogJxhZiJZ0yW5iFzstuMR+D1tpgyaTE3Uks8q4c8=
